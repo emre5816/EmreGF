@@ -28,23 +28,19 @@ musicbot:
   links:
     - mongo
   environment:
-    - BOT_NAME=MusicCatalogBot
-    - API_TOKEN=Telegram API token
-    - BOTAN_TOKEN=Optional botan token
-    - MONGO_HOST=mongo
-mongo:
-  image: mongo
+    - BOT_NAME=EmreGF
+    - API_TOKEN=1527845912:AAE5te67XR-w7LjjrFK1sIgycrpLFHzZv-s
   restart: always
 ```
 
 Or directly with docker:
 ```
 $ docker pull szastupov/musicbot
-$ docker run -e "API_TOKEN=YOUR_TOKEN" \
-             -e "BOT_NAME=BotPlaygroundBot" \
+$ docker run -e "1527845912:AAE5te67XR-w7LjjrFK1sIgycrpLFHzZv-s" \
+             -e "EmreGF=BotPlaygroundBot" \
              -e "MONGO_HOST=mongo" \
              --link mongo:mongo \
-             szastupov/musicbot
+             szastupov/EmreGF
 ```
 
 Or you can run it manually, the requirements are specified in requirements.txt, you know the rest.
